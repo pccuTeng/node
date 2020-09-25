@@ -1,0 +1,62 @@
+<%- include ("header") -%>
+<div class="container">
+  	<h1 class="mb-5">
+      <font color="blue" > 台灣各縣市明日十二小時天氣預報 </font>
+    </h1>
+  	<div class="text-center">
+                <br>
+              <font size="10" color="#0000CC"> 
+                <%=L%> 
+              </font>
+                <br>
+                <font size="5">
+                 <%=wd%>
+                </font>
+                <br>
+                <br>
+  		<table width="300"  align="center" class="table table-hover table-bordered" >
+  			<tr>
+  				<td> <font size="5"> 台灣縣市  </font> </td>
+  				<td  colspan="2" > <font size="5"> <%=L%> </font></td>
+  			</tr>
+  			<tr>
+  				<td> <font size="5"> 降雨機率  </font></td>
+  				<td colspan="2"> <font size="5"> <%=rain%> % </font></td>
+  			</tr>
+  			<tr>
+  				<td> <font size="5">平均溫度   </font></td>
+  				<td colspan="2"> <font size="5"> <%=t%> °C </font></td>
+  			</tr>
+        <tr>
+          <td> <font size="5">最低體感   </font></td>
+          <td colspan="2"> <font size="5"> <%=dt%> °C </font></td>
+        </tr>
+  			<tr>
+  				<td> <font size="5"> 最大風速   </font></td>
+  				<td colspan="2"> <font size="5"> <%=ws%> m/s  </font></td>
+  			</tr>
+        <tr>
+          <td> <font size="5"> 紫外線指數   </font></td>
+          <td colspan="2"> <font size="5"> <%=uvi%> </font></td>
+        </tr>
+        <tr>
+          <td> <font size="5"> 曝曬級數   </font></td>
+          <td colspan="2"> <font size="5"> <%=uvi_s%> </font></td>
+        </tr>
+        <tr>
+          <td colspan="3"> <font size="8"> <%=time%> </font></td>
+        </tr>
+  		</table>
+        <br>
+        <br>
+	</div>
+  <div class="text-center">
+    <a href="https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/" target="_blank"> 資料來源 : 中央氣象局開放資料</a>
+  </div>
+        <br>
+        <br>
+	<div class="text-center">
+		<a type="submit" class="btn btn-block btn-lg btn-primary" href="/" > 返回 </a>
+	</div>
+</div>
+<%- include ("footer") -%>
